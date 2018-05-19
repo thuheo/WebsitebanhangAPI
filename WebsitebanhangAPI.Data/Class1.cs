@@ -8,5 +8,7 @@ namespace WebsitebanhangAPI.Data
 {
     public class Class1
     {
+        public class index;
+
     }
 }
