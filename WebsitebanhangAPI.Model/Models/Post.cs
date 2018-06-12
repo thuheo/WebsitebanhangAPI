@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using WebsitebanhangAPI.Model.Abstract;
 
@@ -36,5 +37,6 @@ namespace WebsitebanhangAPI.Model.Models
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
+        public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }
